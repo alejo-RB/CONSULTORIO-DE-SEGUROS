@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BHdUbRPIt8BLW5IKaO8sK+UeHwJ5I8ryfO/9O1qWaQmXbLbmzoSzov4uhFi5m51B6p9YWxK4yNffz6ZWnZqhHw==",
+  "dgSpecHash": "s0qcSOEiHeXrNjlkgj36qmTNDpdPG7c0y3Hi7ut5i7z7E49RIyWMkVOux5RS/wv7fyZzelZAZyTpzhahzrULkQ==",
   "success": true,
-  "projectFilePath": "C:\\DESARROLLO\\Prueba Tecnica\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj",
+  "projectFilePath": "C:\\DESARROLLO\\Asp Net\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

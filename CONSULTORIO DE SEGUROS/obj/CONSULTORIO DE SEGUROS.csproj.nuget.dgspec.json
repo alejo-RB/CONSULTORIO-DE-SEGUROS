@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DESARROLLO\\Prueba Tecnica\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj": {}
+    "C:\\DESARROLLO\\Asp Net\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj": {}
   },
   "projects": {
-    "C:\\DESARROLLO\\Prueba Tecnica\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj": {
+    "C:\\DESARROLLO\\Asp Net\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DESARROLLO\\Prueba Tecnica\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj",
+        "projectUniqueName": "C:\\DESARROLLO\\Asp Net\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj",
         "projectName": "CONSULTORIO DE SEGUROS",
-        "projectPath": "C:\\DESARROLLO\\Prueba Tecnica\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj",
+        "projectPath": "C:\\DESARROLLO\\Asp Net\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\DESARROLLO\\Prueba Tecnica\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\obj\\",
+        "outputPath": "C:\\DESARROLLO\\Asp Net\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
