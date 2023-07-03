@@ -1,0 +1,38 @@
+﻿@model CONSULTORIO_DE_SEGUROS.Models.AseguradosSeguros
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editar</h1>
+
+<div>
+    <a class="btn btn-warning" asp-action="Index"><i class="bi bi-arrow-left-circle"></i> Atrás</a>
+</div>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="mb-3">
+                <label asp-for="AseguradoId" class="control-label"></label>
+                <select asp-for="AseguradoId" class="form-control" asp-items="ViewBag.AseguradoId"></select>
+                <span asp-validation-for="AseguradoId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="SeguroId" class="control-label"></label>
+                <select asp-for="SeguroId" class="form-control" asp-items="ViewBag.SeguroId"></select>
+                <span asp-validation-for="SeguroId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary"><i class="bi bi-save"></i> Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

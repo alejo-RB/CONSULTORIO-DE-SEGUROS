@@ -1,0 +1,76 @@
+﻿@model CONSULTORIO_DE_SEGUROS.Models.Asegurados
+@{
+    ViewData["Title"] = "DatosMasivos";
+}
+
+<h1>Añadir datos masivamente</h1>
+
+<div>
+    <a class="btn btn-warning" asp-action="Index"><i class="bi bi-arrow-left-circle"></i> Atrás</a>
+</div>
+
+<form method="post" enctype="multipart/form-data" asp-action="DatosMasivos" class="needs-validation" novalidate>
+    <div class="form-group">
+        <label for="fileInput">Seleccionar archivo:</label>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="fileInput" name="fileInput" accept=".xlsx,.txt" required>
+
+            <div class="invalid-feedback">Por favor, selecciona un archivo.</div>
+        </div>
+        <div id="dragDropArea" class="drag-drop-area">
+            <div class="drag-drop-text">Arrastra y suelta el archivo aquí</div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Importar</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    .drag-drop-area {
+        border: 2px dashed #ccc;
+        padding: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .drag-drop-text {
+        font-size: 16px;
+        font-weight: bold;
+        color: #777;
+    }
+</style>
+
+<script>
+    var fileInput = document.getElementById('fileInput');
+    var fileInputLabel = document.getElementById('fileInputLabel');
+    var dragDropArea = document.getElementById('dragDropArea');
+
+    fileInput.addEventListener('change', function () {
+        var fileName = this.value.split("\\").pop();
+        fileInputLabel.innerText = fileName;
+    });
+
+    dragDropArea.addEventListener('dragover', function (e) {
+        e.preventDefault();
+        this.classList.add('dragover');
+    });
+
+    dragDropArea.addEventListener('dragleave', function (e) {
+        e.preventDefault();
+        this.classList.remove('dragover');
+    });
+
+    dragDropArea.addEventListener('drop', function (e) {
+        e.preventDefault();
+        this.classList.remove('dragover');
+        var file = e.dataTransfer.files[0];
+        fileInput.files = e.dataTransfer.files;
+        var fileName = file.name;
+        fileInputLabel.innerText = fileName;
+    });
+</script>

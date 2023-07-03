@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Página de Inicio";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido al Consultorio de Seguros</h1>
+        <p class="lead">Explora nuestros servicios y gestiona tus datos de seguros con facilidad.</p>
+        <hr class="my-4">
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Buscar Seguros por Cédula</h5>
+                    <p class="card-text">Encuentra los seguros asociados a una persona ingresando su número de identificación.</p>
+                    <form action="/Home/BuscarPorCedula" method="get">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Ingrese el número de identificación" name="cedula" required>
+                            <button class="btn btn-primary" type="submit">Buscar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Buscar Asegurados por Código de Seguro</h5>
+                    <p class="card-text">Encuentra las personas aseguradas asociadas a un seguro ingresando su código.</p>
+                    <form action="/Home/BuscarPorCodigoSeguro" method="get">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Ingrese el código de seguro" name="codigoSeguro" required>
+                            <button class="btn btn-primary" type="submit">Buscar</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+        @if (ViewBag.ResultadosPorCedula != null)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Cédula</th>
+                        <th>Nombre del Cliente</th>
+                        <th>Nombre del Seguro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var resultado in ViewBag.ResultadosPorCedula)
+                    {
+                        <tr>
+                            <td>@resultado.Cedula</td>
+                            <td>@resultado.NombreCliente</td>
+                            <td>@resultado.NombreSeguro</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+        @if (ViewBag.ResultadosPorCodigoSeguro != null)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Cédula</th>
+                        <th>Nombre del Cliente</th>
+                        <th>Nombre del Seguro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var resultado in ViewBag.ResultadosPorCodigoSeguro)
+                    {
+                        <tr>
+                            <td>@resultado.Cedula</td>
+                            <td>@resultado.NombreCliente</td>
+                            <td>@resultado.NombreSeguro</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+    </div>
+</div>
