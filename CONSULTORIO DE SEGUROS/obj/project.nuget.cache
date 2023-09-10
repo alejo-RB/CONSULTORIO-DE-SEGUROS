@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s0qcSOEiHeXrNjlkgj36qmTNDpdPG7c0y3Hi7ut5i7z7E49RIyWMkVOux5RS/wv7fyZzelZAZyTpzhahzrULkQ==",
+  "dgSpecHash": "yR1jPcUXTHW9dBsKn0deluknBuJ6Bm76zfuP8LNqnMfxt4Sr7GZJXAxXjwZ08y50a6CcavKurIxAAomNE5csnw==",
   "success": true,
   "projectFilePath": "C:\\DESARROLLO\\Asp Net\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS\\CONSULTORIO DE SEGUROS.csproj",
   "expectedPackageFiles": [
@@ -229,7 +229,11 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
   ],
   "logs": []
 }
